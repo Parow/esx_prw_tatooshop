@@ -1,7 +1,13 @@
-client_script 'client/tattoosList/list.lua'
-client_script 'client/config.lua'
-client_script 'client/client.lua'
+resource_manifest_version '05cfa83c-a124-4cfa-a768-c24a5811d8f9'
 
-client_script "@NativeUI/NativeUI.lua"
-server_script '@mysql-async/lib/MySQL.lua'
-server_script 'server/server.lua'
+client_scripts {
+ "@NativeUI/NativeUI.lua",
+ 'client/client.lua',
+ 'client/tattoosList/list.lua',
+ 'client/config.lua',
+ }
+
+server_scripts {
+'@mysql-async/lib/MySQL.lua',
+'server/server.lua',
+}

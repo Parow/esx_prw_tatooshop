@@ -1,3 +1,7 @@
+ESX = nil 
+TriggerEvent("esx:getSharedObject", function(obj)
+    ESX = obj
+end)
 
 RegisterServerEvent("tattoos:GetPlayerTattoos_s")
 AddEventHandler("tattoos:GetPlayerTattoos_s", function()
